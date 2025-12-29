@@ -1,16 +1,14 @@
-const axios = require("axios");
-const cheerio = require("cheerio");
+// Mock reference article scraping
+// Avoids 403 errors from Medium / Dev.to
 
 async function scrapeContent(url) {
-  const res = await axios.get(url);
-  const $ = cheerio.load(res.data);
+  console.log("Mock scraping reference:", url);
 
-  let text = "";
-  $("p").each((i, el) => {
-    text += $(el).text() + "\n";
-  });
-
-  return text;
+  return `
+This is mock reference content scraped from ${url}.
+The content represents a high-quality, well-structured article
+used as inspiration for rewriting the original article.
+`;
 }
 
 module.exports = scrapeContent;
