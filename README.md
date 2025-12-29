@@ -45,8 +45,6 @@ Make sure you have the following installed:
 - MongoDB (local installation)
 - Git
 
----
-
 ### 2️⃣ Clone the Repository
 ```bash
 git clone https://github.com/ShivamKr-T/beyondchats-assignment.git
